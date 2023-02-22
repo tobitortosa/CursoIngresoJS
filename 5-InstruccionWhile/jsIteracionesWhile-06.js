@@ -1,13 +1,25 @@
-function mostrar()
-{
-	var contador;
-	var acumulador;
-	var numeroIngresado;
+/*
+Tobías Valentin Tortosa
+Division Z
+Grupo 3 
+Ejercicio 06
+*/
 
-	contador=0;
-	acumulador=0;
-	
-	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
-}//FIN DE LA FUNCIÓN
+function mostrar() {
+  let contador;
+  let acumulador;
+  let numeroIngresado;
+
+  contador = 0;
+  acumulador = 0;
+
+  while (contador < 5) {
+    numeroIngresado = prompt("Ingrese un Numero");
+    numeroIngresado = parseInt(numeroIngresado);
+    acumulador = acumulador + numeroIngresado;
+    contador++;
+  }
+
+  document.getElementById("txtIdSuma").value = acumulador;
+  document.getElementById("txtIdPromedio").value = acumulador / contador;
+}

@@ -1,10 +1,20 @@
 /*
+Tobías Valentin Tortosa
+Division Z
+Grupo 3 
+Ejercicio 02
+*/
+
+/*
 al presionar el botón mostrar 10 repeticiones 
 con números DESCENDENTES, desde el 10 al 1.*/
-function mostrar()
-{
-	var contador;
-	contador=0; 
-	alert('iteración while');
+function mostrar() {
+  let numDecente;
 
-}//FIN DE LA FUNCIÓN
+  numDecente = 10; // Variable de Control
+
+  while (numDecente > 0) {
+    alert(numDecente);
+    numDecente--;
+  }
+}
